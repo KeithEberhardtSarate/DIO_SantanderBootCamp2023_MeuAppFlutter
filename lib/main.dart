@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'My first app Home Page'),
     );
   }
 }
@@ -110,7 +110,11 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Text(
               '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
+              style: const TextStyle(
+                color: Colors.red,
+                fontSize: 40,
+                fontWeight: FontWeight.bold,
+              ),
             ),
           ],
         ),
